@@ -3,15 +3,11 @@ import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Contact from "./components/Contact"
 import About from "./components/About"
-
 import {
-  // createBrowserRouter,
-  // RouterProvider,
   Routes,
   Route
 } from "react-router-dom";
 import Downbar from './components/Downbar';
-
 
 function App() {
   return ( 

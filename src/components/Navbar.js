@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
 import Facts from './Facts';
-import { HoverText } from './StyledComponents';
+import { ShakeText } from './StyledComponents';
 
 const Navbar = () => {
 
@@ -14,15 +14,15 @@ const Navbar = () => {
             <Facts />
         </div>
         <section style={{display:"flex", gap: "1.5em", justifyContent:"space-around", marginRight:"1em"}}>
-            <HoverText  onClick={() => navigate("/")}>              
+            <ShakeText  onClick={() => navigate("/")}>              
                 🏠 Home              
-            </HoverText>
-            <HoverText onClick={() => navigate("/about")}>
+            </ShakeText>
+            <ShakeText onClick={() => navigate("/about")}>
                 ⚡️ About              
-            </HoverText>
-            <HoverText onClick={() => navigate("/contact")}>
+            </ShakeText>
+            <ShakeText onClick={() => navigate("/contact")}>
             📱 Contact
-            </HoverText>            
+            </ShakeText>            
         </section>
     </div>
     

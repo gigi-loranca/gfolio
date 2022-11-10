@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
-import { FactButton, Text } from './StyledComponents'
+import { FactButton, ShakeText } from './StyledComponents'
 
 
 function Facts() {
@@ -33,10 +33,9 @@ function Facts() {
   return (
     <div style={{display:"flex", justifyContent:"center"}}>
         <div style={{}}>                    
-                    <FactButton onClick={handleGetFact} style={{backgroundColor:"#282c34", fontSize:"16px"}}>                        
+                    <FactButton onClick={handleGetFact} style={{backgroundColor:"#282c34", fontSize:"2vmin"}}>                        
                         {fact}
                     </FactButton>
-
         </div>
     </div>
   )

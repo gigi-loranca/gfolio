@@ -7,7 +7,7 @@ export const FactButton = styled.h2`
     };
     display:inline-block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2vmin;
     color: white;
     border:0.16em solid rgba(255,255,255,0);
     width:"100%";
@@ -21,10 +21,10 @@ export const FactButton = styled.h2`
 
 export const Text = styled.h1`
   color: #282c34;
-  
+  font-size: 2vmin;
   &:hover{
-    color: palevioletred;
-    transform : scale(1.05);
+    // color: palevioletred;
+    // transform : scale(1.05);
     transition: transform ease-out 319ms;
   }
   
@@ -38,12 +38,12 @@ export const Text = styled.h1`
     };
 `
 
-export const HoverText = styled.h1`
+export const ShakeText = styled.h1`
 font-weight: bold;
-font-size:"20px";
+font-size: 2vmin;
 color: white;
 &:hover {
-    animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.1s cubic-bezier(.36,.07,.19,.97);
     perspective: 1000px;
     color: palevioletred;
     cursor: pointer;
@@ -63,8 +63,3 @@ color: white;
       }
   };
 `;
-
-export const CurveDivider = styled.div`
-  border-top: 1px solid #282c34;
-  border-radius: 10%;
-`
