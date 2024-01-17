@@ -18,7 +18,7 @@ function Downbar() {
             window.open("https://www.linkedin.com/in/guillermo-loranca-miranda-09b688b4/")
         } if (social === "mail") {
             const emailAddress = 'guillerme212@gmail.com';
-            const subject = 'Hello from your website!';
+            const subject = 'Hi Guillermo :)';
             const body = 'I wanted to get in touch with you about...';
             const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
@@ -28,7 +28,7 @@ function Downbar() {
   return (
      <div style={{borderTop: "1px solid black",position: "absolute", bottom: 0, width: "100%"}}>
         <div style={{display: "flex", justifyContent:"center"}}>
-            <div style={{ display:"flex",justifyContent:"space-around",width:"25%"}}>
+            <div style={{ display:"flex",justifyContent:"space-around", width:"25%"}}>
                 <Text className="subtitle" onClick={e => urlReturnOnClick("fb")}>
                     <img width="25px" src={facebookIcon || ""} alt=""/>                        
                 </Text>                
