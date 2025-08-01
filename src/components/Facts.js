@@ -33,7 +33,7 @@ function Facts() {
   return (
     <div style={{display:"flex", justifyContent:"center"}}>
         <div style={{}}>                    
-                    <FactButton onClick={handleGetFact} style={{backgroundColor:"#282c34", fontSize:"2vmin"}}>                        
+                    <FactButton onClick={handleGetFact} style={{backgroundColor:"black", fontSize:"2vmin"}}>                        
                         {fact}
                     </FactButton>
         </div>

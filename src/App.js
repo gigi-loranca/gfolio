@@ -8,10 +8,11 @@ import {
   Route
 } from "react-router-dom";
 import Downbar from './components/Downbar';
+import { Page } from './components/StyledComponents'
 
 function App() {
   return ( 
-    <div className="App">
+    <Page className="App">
         <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage/>} />
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/contact" element={<Contact/>} />
         </Routes>
         <Downbar/>
-    </div>
+    </Page>
   );
 }
 

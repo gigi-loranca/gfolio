@@ -8,23 +8,22 @@ import gmailIcon from "../assets/images/gmail_icon.svg"
 
 function Downbar() {
 
-    const urlReturnOnClick = (social)=>{
+    const urlReturnOnClick = social => {
         //select wich social to open
         if (social === "ig") {
             window.open('https://instagram.com/gigi.offiiciel');            
         } if (social ==="sc") {
-            window.open('https://instagram.com/gigi.offiiciel');
+            window.open('https://soundcloud.com/spaansekech69');
         } if (social ==="ld") {
             window.open("https://www.linkedin.com/in/guillermo-loranca-miranda-09b688b4/")
         } if (social === "mail") {
             const emailAddress = 'guillerme212@gmail.com';
-            const subject = 'Hi Guillermo :)';
+            const subject = 'Hi Guillermo';
             const body = 'I wanted to get in touch with you about...';
             const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
         };
     }
-
   return (
      <div style={{borderTop: "1px solid black",position: "absolute", bottom: 0, width: "100%"}}>
         <div style={{display: "flex", justifyContent:"center"}}>
@@ -50,4 +49,4 @@ function Downbar() {
   )
 }
 
-export default Downbar 
+export default Downbar   

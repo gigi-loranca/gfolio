@@ -1,18 +1,17 @@
 .App {
-  font-family: 'Gill Sans';
+  background-color: black;
   font-weight: 600;
   font-size: calc(12px);
   text-align: center;
-  background-image:linear-gradient(to bottom right, rgba(44, 90, 199, 0.413) , rgba(0, 0, 0, 0.034));
   min-height: 100vh;
   display: "flex";
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 5vh;
+  background-color: black;
+  min-height: 20vh;
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
 }

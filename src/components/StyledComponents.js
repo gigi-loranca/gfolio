@@ -2,28 +2,26 @@ import styled from "styled-components";
 
 export const FactButton = styled.h2`
     &:hover {
-        color: palevioletred;
+        color: grey;
         cursor: pointer;
     };
     display:inline-block;
     font-weight: bold;
     font-size: 2vmin;
     color: white;
-    border:0.16em solid rgba(255,255,255,0);
     width:"100%";
-    border-radius:2em;
+    border-radius: 3em;
     box-sizing: border-box;
     text-decoration:none;
-    background-color: #282c34;
     text-align:center;
     transition: all 0.2s;
 `
 
 export const Text = styled.h1`
-  color: #282c34;
+  color: white;
   font-size: 2vmin;
   &:hover{
-    // color: palevioletred;
+    // color: red;
     // transform : scale(1.05);
     transition: transform ease-out 319ms;
   }
@@ -39,13 +37,14 @@ export const Text = styled.h1`
 `
 
 export const ShakeText = styled.h1`
+color: white;
 font-weight: bold;
 font-size: 2vmin;
-color: white;
+content;
 &:hover {
     animation: shake 0.1s cubic-bezier(.36,.07,.19,.97);
     perspective: 1000px;
-    color: palevioletred;
+    color: grey;
     cursor: pointer;
     transform: translate3d(0, 0, 0);
     @keyframes shake {
@@ -62,4 +61,9 @@ color: white;
           transform: translate3d(2px, 0, 0);
       }
   };
-`;
+`
+
+export const Page = styled.div`
+  background: "black";
+`
+

@@ -4,25 +4,25 @@ import styled from 'styled-components'
 import Facts from './Facts';
 import { ShakeText } from './StyledComponents';
 
+
 const Navbar = () => {
+
+const textSize = {fontSize:"64px"}
 
   const navigate = useNavigate()
 
   return (          
-    <div className='App-header'  style={{display:"flex", justifyContent:"space-between", alignItems:"center"}} >                
-        <div style={{marginLeft: "1em", gap:"1em"}}>                
-            <Facts />
-        </div>
-        <section style={{display:"flex", gap: "1.5em", justifyContent:"space-around", marginRight:"1em"}}>
-            <ShakeText  onClick={() => navigate("/")}>              
-                🏠 Home              
+    <div style={{display:"flex", backgroundColor: "black", height:"20vh", justifyContent:"center", alignContent:"center", alignItems:"center"}} >                
+        <section style={{display:"flex", width:"80%", gap: "1.5em", justifyContent:"space-between", marginRight:"1em"}}>
+            <ShakeText style={textSize} onClick={() => navigate("/")}>              
+                Home              
             </ShakeText>
-            <ShakeText onClick={() => navigate("/about")}>
-                ⚡️ About              
+            <ShakeText style={textSize} onClick={() => navigate("/about")}>
+                About              
             </ShakeText>
-            <ShakeText onClick={() => navigate("/contact")}>
-            📱 Contact
-            </ShakeText>            
+            <ShakeText style={textSize} onClick={() => navigate("/contact")}>
+                Contact
+            </ShakeText>
         </section>
     </div>
     
