@@ -12,16 +12,16 @@ const textSize = {fontSize:"64px"}
   const navigate = useNavigate()
 
   return (          
-    <div style={{display:"flex", backgroundColor: "black", height:"20vh", justifyContent:"center", alignContent:"center", alignItems:"center"}} >                
-        <section style={{display:"flex", width:"80%", gap: "1.5em", justifyContent:"space-between", marginRight:"1em"}}>
+    <div style={{position: "fixed", zIndex: 1, display:"flex", backgroundColor: "black", height:"10vh", justifyContent:"center", alignContent:"center", alignItems:"center"}} >                
+        <section style={{display:"flex", width:"100%", gap: "1.5em", justifyContent:"space-between", marginRight:"1em"}}>
             <ShakeText style={textSize} onClick={() => navigate("/")}>              
                 Home              
             </ShakeText>
             <ShakeText style={textSize} onClick={() => navigate("/about")}>
-                About              
+                Education and Experience              
             </ShakeText>
-            <ShakeText style={textSize} onClick={() => navigate("/contact")}>
-                Contact
+            <ShakeText style={textSize} onClick={() => navigate("/music")}>
+                Music
             </ShakeText>
         </section>
     </div>

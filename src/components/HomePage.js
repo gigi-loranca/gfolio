@@ -4,13 +4,9 @@ import { Text, Page } from './StyledComponents'
 
 function HomePage() {
   return (
-    <Page>       
-      <h1 style={{color: "white"}}>HomePage</h1>
-      <img style={{width:"100px", border:"1px solid black", borderRadius:"4px"}} src={imageImport} alt="an image of guillermo" />
-      <Text className='subtitle'>
-        Hi, welcome to Guillermo`s website.
-        <br/>
-        Hi, welcome to Guillermo`s website paragraph two
+    <Page style={{zIndex: 1, margin:"10vh 40vh 10vh 10vh"}}>       
+      <Text style={{color:"white", fontSize:"84px"}} className='title'>
+        textt
       </Text>
     </Page>
   )

@@ -25,13 +25,12 @@ export const Text = styled.h1`
     // transform : scale(1.05);
     transition: transform ease-out 319ms;
   }
-  
     &.title {
-      font-size: 24px;
+      font-size: 32px;
       weight: 400;
     };
     &.subtitle {
-      font-size: 16px;
+      font-size: 20px;
       weight: 200;
     };
 `
@@ -42,7 +41,7 @@ font-weight: bold;
 font-size: 2vmin;
 content;
 &:hover {
-    animation: shake 0.1s cubic-bezier(.36,.07,.19,.97);
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97);
     perspective: 1000px;
     color: grey;
     cursor: pointer;
@@ -65,5 +64,17 @@ content;
 
 export const Page = styled.div`
   background: "black";
+  display: flex;
+  flex-direction: column;
 `
 
+
+export const BackgroundPage = styled.div`
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+`

@@ -6,7 +6,7 @@ import linkedinIcon from "../assets/images/Linkedin_icon.svg"
 import soundcloudIcon from "../assets/images/soundcloud_icon.svg"
 import gmailIcon from "../assets/images/gmail_icon.svg"
 
-function Downbar() {
+function Footer() {
 
     const urlReturnOnClick = social => {
         //select wich social to open
@@ -25,7 +25,7 @@ function Downbar() {
         };
     }
   return (
-     <div style={{borderTop: "1px solid black",position: "absolute", bottom: 0, width: "100%"}}>
+     <div style={{borderTop: "1px solid white",position: "fixed", bottom: 0, width: "50%", marginLeft:"25%"}}>
         <div style={{display: "flex", justifyContent:"center"}}>
             <div style={{ display:"flex",justifyContent:"space-around", width:"25%"}}>
                 <Text className="subtitle" onClick={e => urlReturnOnClick("fb")}>
@@ -49,4 +49,4 @@ function Downbar() {
   )
 }
 
-export default Downbar   
+export default Footer   
