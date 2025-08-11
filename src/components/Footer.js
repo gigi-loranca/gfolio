@@ -13,7 +13,7 @@ function Footer() {
         if (social === "ig") {
             window.open('https://instagram.com/gigi.offiiciel');            
         } if (social ==="sc") {
-            window.open('https://soundcloud.com/spaansekech69');
+            window.open('https://soundcloud.com/spaansekech699');
         } if (social ==="ld") {
             window.open("https://www.linkedin.com/in/guillermo-loranca-miranda-09b688b4/")
         } if (social === "mail") {
@@ -25,7 +25,7 @@ function Footer() {
         };
     }
   return (
-     <div style={{borderTop: "1px solid white",position: "fixed", bottom: 0, width: "50%", marginLeft:"25%"}}>
+    <div style={{borderTop: "1px solid white",position: "fixed", bottom: 0, width: "50%", marginLeft:"25%"}}>
         <div style={{display: "flex", justifyContent:"center"}}>
             <div style={{ display:"flex",justifyContent:"space-around", width:"25%"}}>
                 <Text className="subtitle" onClick={e => urlReturnOnClick("fb")}>
